@@ -22,7 +22,6 @@ int main()
 	setlocale(0, "");
     Car* car1 = new Car();
     Car* car2 = new Jeep();
-    car2->unvirtualmetod();
     Jeep* jeep1 = new Jeep();
 
     cout << "\t\tПроверка на принадлежность\n";
@@ -37,7 +36,7 @@ int main()
     cout << jeep1->classname() << endl;
 
 
-    cout << "\n\t\tПриведение типов через dinamic cast\n";
+    cout << "\n\t\tПриведение типов через dynamic cast\n";
     Jeep* jeep2 = dynamic_cast<Jeep*>(car2);
     cout << jeep2->classname() << endl;
     // Перекрытые методы
@@ -51,7 +50,7 @@ int main()
     jeep3->unvirtualmetod();
     car2->unvirtualmetod();
     
-
+    cout << "\n\tУдаление объектов\n";
     delete car1;
     delete car2;
     delete jeep1;

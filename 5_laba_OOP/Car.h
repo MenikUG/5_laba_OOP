@@ -84,7 +84,7 @@ public:
 		cout << "Невиртуальный метод (Jeep)\n";
 	}
 
-	~Jeep() {
+	virtual ~Jeep() {
 		cout << "Деструктор ~Jeep\n";
 	}
 };
