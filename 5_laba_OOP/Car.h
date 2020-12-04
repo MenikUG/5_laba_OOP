@@ -32,10 +32,14 @@ public:
 
 	virtual bool isA(string classname) {
 		cout << "Виртуальный метод isA (Car)\n";
-		if (name == "Car")
+		if (classname == "Car")
 			return 1;
 		else
 			return 0;
+	}
+
+	void unvirtualmetod() {
+		cout << "Невиртуальный метод (Car)\n";
 	}
 
 	virtual ~Car() {
@@ -70,10 +74,14 @@ public:
 
 	bool isA(string classname) {
 		cout << "Невиртуальный метод isA (Jeep)\n";
-		if (name == "Jeep")
+		if (classname == "Jeep")
 			return 1;
 		else
 			return 0;
+	}
+
+	void unvirtualmetod() {
+		cout << "Невиртуальный метод (Jeep)\n";
 	}
 
 	~Jeep() {
